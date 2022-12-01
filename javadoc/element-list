@@ -1,0 +1,6 @@
+module:com.project.appointmentscheduler.main
+com.project.appointmentscheduler.controller
+com.project.appointmentscheduler.dao
+com.project.appointmentscheduler.main
+com.project.appointmentscheduler.model
+com.project.appointmentscheduler.utilities

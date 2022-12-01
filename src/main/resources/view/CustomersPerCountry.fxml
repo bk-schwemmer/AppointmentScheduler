@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.appointmentscheduler.controller.CustomersPerCountryController">
+    <children>
+      <VBox alignment="CENTER" minHeight="300.0" minWidth="300.0" spacing="50.0">
+         <children>
+            <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" minHeight="70.0" text="Customers per Country" textAlignment="CENTER" VBox.vgrow="SOMETIMES">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="109.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="35.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="156.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="topName" text="Top Country" />
+                  <Label fx:id="midName" text="Middle Country" GridPane.rowIndex="1" />
+                  <Label fx:id="bottomName" text="Bottom Country" GridPane.rowIndex="2" />
+                  <Label fx:id="topCount" text="Top Count" GridPane.columnIndex="2" />
+                  <Label fx:id="midCount" text="Middle Count" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label fx:id="bottomCount" text="Bottom Count" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="-" GridPane.columnIndex="1" />
+                  <Label text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </VBox>
+        <GridPane alignment="TOP_CENTER" prefWidth="300.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+                <Button mnemonicParsing="false" onAction="#signOut" text="Sign Out" GridPane.columnIndex="2" />
+                <Button mnemonicParsing="false" onAction="#onBack" text="Back" />
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </GridPane>
+    </children>
+</AnchorPane>
